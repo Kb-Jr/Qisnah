@@ -9,13 +9,14 @@
 <body>
  
     <nav id="nav">
-        <a href="#about-us">About us</a>
-        <a href="#our-services">Our Servies</a>
-        <a href="#menu">Our Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-
+        <div class="nav-links">
+            <a href="#about-us">About us</a>
+            <a href="#our-services">Our Servies</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>      
+        </div>
         <div class="burger">
             <div class="line-1"></div>
             <div class="line-2"></div>
@@ -79,11 +80,13 @@
 
 
     <section id="menu">
+
+        <h2>Menu</h2>
         <div class="menu-bar">
             <div class="all-menu">
                 <a href="">All Menu</a>
             </div>
-            <div class="breakfast">
+            <div class="breakfast" id="breakfastid">
                 <a href="">Beakfast</a>
             </div>
             <div class="lunchxdinner">
@@ -94,8 +97,8 @@
             </div>
         </div>
 
-        <div class="menu-content">
-            <div class="menu-card" data-aos="fade-left" data-aos-delay="1000">
+        <div class="menu-content" id="menu-content">
+            <div class="menu-card" id="breakfast-1" data-aos="fade-left" data-aos-delay="1000">
                 <div class="menu-heading">
                     <h4>Noodles and Egg</h4>
                     <h4 style="color: #FFB100;">N500</h4>
@@ -104,7 +107,7 @@
                     <p>2 packs of boiled Noodles and two eggs (cooked or fried)</p>
                 </div>
             </div>
-            <div class="menu-card" data-aos="fade-left" data-aos-delay="1000">
+            <div class="menu-card" id="breakfast-2" data-aos="fade-left" data-aos-delay="1000">
                 <div class="menu-heading">
                     <h4>Potatoes and Egg</h4>
                     <h4 style="color: #FFB100;">N600</h4>
@@ -288,15 +291,38 @@
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script>
     new Glider(document.querySelector('.glider'), {
+  // Mobile-first defaults
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  scrollLock: true,
+  dots: '#resp-dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+
+        responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
         slidesToShow: 2,
-    slidesToScroll: 1,
-    draggable: true,
-    dots: '.dots',
-    duration:2,
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-        }
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
     });
 </script>
 </body>
