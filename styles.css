@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&family=Montserrat&display=swap');
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   background-color: black;
+   
+   
+}
+
+nav{
+    text-transform: uppercase;
+    z-index: 20;
+    position: fixed;
+    padding: 1rem;
+    width: 100vw;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    background: rgb(255 255 255/85%);
+}
+
+nav a{
+    margin-right: 25px;
+    color: #FFB100;
+    text-decoration: none;
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+a:hover, a:active{
+ 
+    text-decoration: underline;
+}
+
+section{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: black;
+    opacity: 40%;
+}
+
+.title-group{
+    color: white;
+    z-index: 10;
+    
+}
+
+.title-group h1{
+    font-family: lobster, sans-serif;
+    font-size: 7rem;
+    /* color: #FFC93C; */
+    color: #FFB100;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.title-group h2{
+    font-family: montserrat, sans-serif;
+    font-size: 2rem;
+    /* color: #FFC93C; */
+    color: #FFB100;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+#about-us{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-container{
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid blue; */
+    
+}
+
+.about-us-text{
+    width: 40%;
+    max-height: 30%;
+    background-color: white;
+    opacity: 95%;
+    color: black;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: comfortaa, sans-serif;
+    margin: auto;
+    box-shadow: 0 5px 20px 1px rgba(255, 177, 0, 0.7);
+    transition: transform 0.3s;
+}
+
+.about-us-text:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.about-us-text h2{
+    color: #FFB100;
+    font-size: 1.9rem;
+    font-family: lobster, sans-serif;
+}
+
+.about-img{
+    background-image: url(header.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    width: 30%;
+    height: 80vh;
+    box-shadow: 0 5px 20px 1px rgba(255, 177, 0, 0.7);
+    margin: auto;
+    transition: transform 0.3s;
+}
+
+.about-img:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+#our-services{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+#our-services h2{
+    text-transform: uppercase;
+    font-family: lobster, sans-serif;
+    font-size: 2rem;
+    color: #FFB100;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 70%; */
+}
+
+.services-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    max-width: 30%;
+    max-height: 70%;
+    padding: 10px;
+    margin: 10px;
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 1px rgba(255, 177, 0, 0.7);
+    transition: transform 0.3s;
+}
+
+.services-card:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.services-card h3{
+    font-family: lobster, sans-serif;
+    font-size: 1.4rem;
+}
+
+.services img{
+    height: 250px;
+    width: 250px;
+  
+}
+
+.services-text{
+    max-width: 100%;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 3rem;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+.menu-bar > div{
+    background-color: #FFB100;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.menu-bar > div:hover{
+    background-color: white;
+    color: #FFB100;
+    
+}
+.menu-bar a{
+    color: white;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+   
+}
+.menu-bar a:hover{
+    color: #FFB100;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+.menu-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width:25%;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.menu-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: lobster, sans-serif;
+
+}
+
+.menu-text{
+    font-family: comfortaa, sans-serif;
+    font-size: 0.8rem;
+}
+
+
+#gallery{
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 2%;
+}
+
+#gallery h2{
+    font-family: lobster, sans-serif;
+    font-size: 2rem;
+    padding-top: 2%;
+    color: #FFB100;
+}
+
+.grid{
+    list-style:none;
+    padding:.5em;
+    display:grid;
+    grid-auto-flow:row;
+    grid-template-columns:1fr;
+}
+
+.grid-item{
+    margin: .5em;
+}
+
+.grid-item:first-of-type{
+    grid-area: 1 / 1 / span 2 / span 2; 
+}
+
+.grid-item  img{
+    display:block;
+    height:auto;
+    max-width:100%;
+    margin:0 auto;
+}
+
+
+/* *,*::before,*::after {
+    box-sizing: border-box;
+} */
+
+#testimonials{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#testimonials h1{
+    color:#FFB100;
+    font-family: lobster,sans-serif;
+    font-size: 3.2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.glider-contain div {
+    display: flex;
+}
+
+.glider {
+    /* background-color: rgb(224,224,224); */
+    border-radius: 20px;
+    color: white;
+    font-family: comfortaa, sans-serif;
+}
+
+.glider div {
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    /* border: 1px solid red; */
+}
+.glider div img {
+    border-radius: 50%;
+    width: auto;
+    max-width: 50%;
+    max-height: 300px;
+}
+
+.glider div p {
+    font-weight: 600;
+    padding: 0.7rem;
+}
+
+button.glider-next, button.glider-prev {
+    position: static;
+    padding: 1rem;
+}
+
+.glide-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.glide-text h3{
+    color: #FFB100;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    
+    width: 90vw;
+}
+
+.fab{
+    font-size: 50px;
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.4s;
+    
+}
+
+.fab:hover{
+    transform: scale(115%);
+    color: #FFB100;
+}
+
+@media (min-width:640px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
+ 
+ 
+@media (min-width:640px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
+@media (min-width:768px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ 
+ 
+@media (min-width:1024px){
+    .grid{
+      grid-template-columns: repeat(4, 1fr);
+    
+    }
+}
+ 
+ 
+ 
+@media (min-width:1280px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+ 
+@media (min-width:1536px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
